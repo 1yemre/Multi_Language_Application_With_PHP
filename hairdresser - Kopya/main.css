@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Mukta:wght@300&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+
+/*? 
+font-family: 'Dancing Script', cursive;
+font-family: 'Mukta', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+* {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .container {
+  max-width: 1100px;
+  margin: 0 auto;
+} */
+
+body {
+  background-color: #fff;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.1rem 0.8rem;
+  background-color: purple;
+  border-radius: 0.3rem;
+  color: #fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+/*!-------- NAV START-----------*/
+
+nav {
+  display: flex;
+  justify-content: center;
+  font-family: "Dancing Script", cursive, sans-serif;
+}
+nav.active {
+  display: none;
+}
+.container {
+  position: relative;
+  background: url(assets/img/banner.png);
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+}
+
+nav .nav-items {
+  display: flex;
+  justify-content: center;
+  padding: 3.2rem;
+}
+
+nav .logo img {
+  width: 130px;
+}
+
+nav .nav-item {
+  margin: 1.2rem;
+}
+
+nav .nav-item a {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+nav .nav-item a:hover {
+  animation: color 2s ease-in;
+}
+
+nav .language:not(:last-child) {
+  padding-right: 1rem;
+}
+
+@keyframes color {
+  0% {
+    color: red;
+  }
+
+  50% {
+    color: aqua;
+  }
+
+  100% {
+    color: black;
+  }
+}
+
+.container #resposive-bar {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: none;
+}
+
+.bg-text .text-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*!-------- ABOUT US START----------*/
+.aboutus h3 {
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: "Mukta", sans-serif;
+  border-bottom: 1px solid orange;
+}
+.about-page {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.about-page .left {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Mukta", sans-serif;
+}
+
+.about-page .right {
+  background: url(assets/img/banner-about.png);
+  width: 50%;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*!-------- Service START----------*/
+
+.services-page h3 {
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: "Mukta", sans-serif;
+  border-bottom: 1px solid orange;
+}
+.services {
+  display: flex;
+}
+
+.services .left-service {
+  background: url(assets/img/service-page.png);
+  width: 45%;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+}
+
+.services .left-service .text {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: rebeccapurple;
+}
+
+.services .right-service {
+  width: 55%;
+  height: 500px;
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: url(assets/img/service-right.png);
+  background-size: cover;
+}
+
+.services .right-service .box {
+  width: 300px;
+  height: 200px;
+  padding: 1rem;
+  border-left: 0.5px solid #fff;
+  border-right: 0.5px solid #fff;
+  text-align: center;
+}
+
+.services .right-service .box img {
+  width: 45px;
+  text-align: center;
+}
+
+.services .right-service .text {
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.services .right-service .text h4 {
+  font-size: 1rem;
+}
+
+/*!-------- Contanct START----------*/
+.contact-page h3 {
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: "Mukta", sans-serif;
+  border-bottom: 1px solid orange;
+}
+
+.contact-page iframe {
+  width: 100%;
+}
+
+.contact-page .contact-all {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  position: relative;
+}
+
+.contact-page .contact-all .contact-left {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid red;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-page .contact-all .contact-left h3,
+h2,
+p {
+  padding: 1rem;
+}
+
+.contact-page .contact-all .contact-right {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid red;
+  font-family: "Poppins", sans-serif;
+}
+
+/*!-------- Footer START----------*/
+
+footer {
+  background: #181818;
+  color: #fff;
+  font-family: "Mukta", sans-serif;
+}
+
+footer .about {
+  display: flex;
+  padding-top: 1rem;
+}
+
+footer .about .about-text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .about .adress {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .about .adress .social-media {
+  font-size: 2rem;
+}
+
+footer .about .adress .social-media a {
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 0.1rem;
+}
+
+footer .about .adress .social-media a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+footer h3 {
+  text-align: center !important;
+  padding-top: 1rem;
+  background-color: #151515;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 0.8rem;
+}
